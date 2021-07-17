@@ -1,5 +1,5 @@
-# JavaScript MiniSite Template
- ## Template For Building JS Minisites at Coder Foundry.
+# Super Dog Events
+ ## Super Dog Events a coding challenge.
 
 Make sure to change the template to reflect your app. Follow these basic steps to make sure your app is ready to go. 
 
