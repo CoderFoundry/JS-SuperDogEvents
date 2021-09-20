@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>APP NAME: Coding Challenge by Mark Spectre</title>
+    <title>SuperDog Events: Coding Challenge by Mark Spectre</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,6 +12,11 @@
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
+
+    <!--Prisim-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-twilight.min.css"
+        integrity="sha512-akb4nfKzpmhujLUyollw5waBPeohuVf0Z5+cL+4Ngc4Db+V8szzx6ZTujguFjpmD076W8LImVIbOblmQ+vZMKA=="
+        crossorigin="anonymous" />
 
     <link href="css/site.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
@@ -24,7 +29,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="/img/MspectreMark.svg" alt="" width="30" height="24"
                     class="d-inline-block align-text-top">
-                APP NAME</a>
+                SuperDog Events</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +49,7 @@
                         <a class="nav-link" href="#">The Repo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" target="_blank" href="https://learn.coderfoundry.com">About</a>
                     </li>
                 </ul>
             </div>
@@ -53,40 +58,73 @@
     <!-- ======= Main Section ======= -->
     <main id="content" class="flex-shrink-0">
         <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6 ">
-                    <img src="/img/APPNAMELogo.svg" class="center-block d-block mx-auto img-fluid" alt="App Logo"
-                        width="700" height="500" loading="lazy">
+            <div class="row flex-lg-row-reverse g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-5 ">
+                    <img src="/img/SuperDogEventsWebLogosmall.png" class="center-block d-block mx-auto img-fluid"
+                        alt="App Logo" width="700" height="500" loading="lazy">
                 </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">APP NAME: A Coding Challenge</h1>
-                    <h4 class="lead">Your project description goes here. </h4>
-                    <ul class="fa-ul pt-2 checklist">
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS and Bootstrap Layout</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript Fundamentals</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript Loops</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript Functions</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript Dom Manipulation
-                        </li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript if/then/else</li>
-                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript boolean logic</li>
-                    </ul>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a type="button" class="btn btn-outline-dark btn-lg px-4 me-md-2" href="app.html">Try It Out</a>
-                    </div>
-                    <h5 class="fw-bold mt-5">Technolgies Used </h5>
-                    <div class="d-flex">
-                        <div class="row row-cols-4">
-                            <div class="col"><i class="fab fa-js-square fa-5x jsicon"></i></div>
-                            <div class="col"><i class="fab fa-bootstrap fa-5x bsicon"></i></div>
-                            <div class="col"><i class="fab fa-html5 fa-5x html5icon"></i></div>
-                            <div class="col"><i class="fab fa-css3-alt fa-5x css3icon"></i></div>
+                <div class="col-lg-7">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">SuperDog Events: A Coding Challenge</h1>
+                    <h4 class="lead">SuperDog Events is an event company the produces comic cons. The marketing team has
+                        requested a
+                        site the displays stats from their events. You are given an array of event data to build a site.
+                    </h4>
+                    <p>
+                        <b>Given an array of objects of event data display the following:</b>
+                        <ul>
+                            <li>Total attendance by City</li>
+
+                            <li>Average Attendance by City</li>
+
+                            <li>Least attended event by City</li>
+
+                            <li>Most attended event by City</li>
+
+                            <li>Show these stats for All Events</li>
+
+                            <li>
+                                Extra Credit: Add the ability to add additional events. Store the events in local
+                                storage or a database.
+                            </li>
+                        </ul>
+                    </p>
+
+                    <!--                    <p><b>Below is the array of data you are given:</b></p>
+                    <pre>
+                    <code class="language-js">
+[{event: "ComicCon",city: "New York",state: "New York",attendance: 240000,date: "06/01/2017"},
+{event: "ComicCon",city: "New York",state: "New York",attendance: 250000,date: "06/01/2018"},
+{event: "ComicCon",city: "New York",state: "New York",attendance: 257000,date: "06/01/2019"},
+{event: "ComicCon",city: "San Diego",state: "California",attendance: 130000,date: "06/01/2017"},
+{event: "ComicCon",city: "San Diego",state: "California",attendance: 140000,date: "06/01/2018"},
+{event: "ComicCon",city: "San Diego",state: "California",attendance: 150000,date: "06/01/2019"},
+{event: "HeroesCon",city: "Charlotte",state: "North Carolina",attendance: 40000,date: "06/01/2017"},
+{event: "HeroesCon",city: "Charlotte",state: "North Carolina",attendance: 45000,date: "06/01/2018"},
+{event: "HeroesCon",city: "Charlotte",state: "North Carolina",attendance: 50000,date: "06/01/2019"}]
+                        </code>
+                    </pre>
+                    -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                <a type="button" class="btn btn-outline-dark btn-lg px-4 me-md-2" href="app.html">Try It
+                                    Out</a>
+                            </div>
+                            <h5 class="fw-bold mt-3">Technolgies Used </h5>
+                            <div class="d-flex">
+                                <div class="row row-cols-4">
+                                    <div class="col"><i class="fab fa-js-square fa-5x jsicon"></i></div>
+                                    <div class="col"><i class="fab fa-bootstrap fa-5x bsicon"></i></div>
+                                    <div class="col"><i class="fab fa-html5 fa-5x html5icon"></i></div>
+                                    <div class="col"><i class="fab fa-css3-alt fa-5x css3icon"></i></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
     </main>
-    
+
     <!-- ======= Footer Section ======= -->
     <footer class="footer mt-auto py-3 ">
         <div class="container-fluid">
@@ -94,7 +132,7 @@
                 <div class="col text-light order-last order-lg-first ">
                     <div><span class="text-muted">&copy2021</span> Mark Spectre | mspectre@moon.com</div>
                 </div>
-                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
+                <div class="col d-flex align-items-start justify-content-start">
                     <img src="/img/MarkSpectre_WhtLogo.svg" alt="" height="24">
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
@@ -111,6 +149,11 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/prism.min.js"
+        integrity="sha512-WkVkkoB31AoI9DAk6SEEEyacH9etQXKUov4JRRuM1Y681VsTq7jYgrRw06cbP6Io7kPsKx+tLFpH/HXZSZ2YEQ=="
+        crossorigin="anonymous">
     </script>
 </body>
 
