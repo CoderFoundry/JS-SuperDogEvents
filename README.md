@@ -1,23 +1,86 @@
-# Super Dog Events
- ## Super Dog Events a coding challenge.
+![Image description](https://github.com/CoderFoundry/SuperDogEvents/blob/master/images/SuperDogEventsWebLogosmall.png)
 
-Make sure to change the template to reflect your app. Follow these basic steps to make sure your app is ready to go. 
+Super Dog Events A Coding Challenge
 
- - Change out APP NAME with the name of your app
- - Change the logo to reflect the app name
+[![Demo](https://img.shields.io/badge/DEMO-blue)](https://superdogevents.coderfoundry.com/)
 
- ![Tux, the Linux mascot](/img/APPNAMELogo.svg
- )
+Given an array of objects of event data display the following:
 
- - Change the Code to reflect the code in the new app. **Don't** leave the sample code below.
+Total attendance by City
 
-     `function getValues() {
-            Alert ("Hello App");
-        }
-        `
-- Change the repo link to point to the repo of your app.
+Average Attendance by City
 
-- Change the About link to point to your portfolio
+Least attended event by City 
 
-- Finally Change this Readme!
+Most attended event by City
 
+Also Show these stats for All Events
+
+Extra Credit: Add the ability to add additional events. Store the events in local storage.
+
+Given the following array of objects:
+
+ [{
+    event: "ComicCon",
+    city: "New York",
+    state: "New York",
+    attendance: 240000,
+    date: "06/01/2017",
+  },
+  {
+    event: "ComicCon",
+    city: "New York",
+    state: "New York",
+    attendance: 250000,
+    date: "06/01/2018",
+  },
+  {
+    event: "ComicCon",
+    city: "New York",
+    state: "New York",
+    attendance: 257000,
+    date: "06/01/2019",
+  },
+  {
+    event: "ComicCon",
+    city: "San Diego",
+    state: "California",
+    attendance: 130000,
+    date: "06/01/2017",
+  },
+  {
+    event: "ComicCon",
+    city: "San Diego",
+    state: "California",
+    attendance: 140000,
+    date: "06/01/2018",
+  },
+  {
+    event: "ComicCon",
+    city: "San Diego",
+    state: "California",
+    attendance: 150000,
+    date: "06/01/2019",
+  },
+  {
+    event: "HeroesCon",
+    city: "Charlotte",
+    state: "North Carolina",
+    attendance: 40000,
+    date: "06/01/2017",
+  },
+  {
+    event: "HeroesCon",
+    city: "Charlotte",
+    state: "North Carolina",
+    attendance: 45000,
+    date: "06/01/2018",
+  },
+  {
+    event: "HeroesCon",
+    city: "Charlotte",
+    state: "North Carolina",
+    attendance: 50000,
+    date: "06/01/2019",
+  },
+];
