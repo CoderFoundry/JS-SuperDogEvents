@@ -97,7 +97,7 @@ function buildDropDown() {
   }
   //Call Display Stats passing the list of current Events
   displayStats(curEvents);
-  //Call dipslay data and show the data in a grid
+  //Call display data and show the data in a grid
   displayData();
 }
 
