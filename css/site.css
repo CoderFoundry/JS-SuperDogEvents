@@ -1,33 +1,10 @@
 :root {
-  --primary-color: #001E43;
-  --secondary-color: #ff993b;
-  --dark-color: #242424;
-  --white-color: #DFE3E4;
+  --primary-color: rgb(0, 30, 67);
+  --secondary-color: rgb(255, 153, 59);
+  --secondary-color-alpha: rgba(255, 153, 59, 0.4);
+  --dark-color: rgb(36, 36, 36);
+  --white-color: rgb(223, 227, 228);
 }
-
-.cta{
-  background-color: var(--dark-color);
-  color: var(--white-color);
-}
-
-.cta h4{
-  color: var(--white-color);
-}
-
-.cta h6{
-  color: var(--white-color);
-}
-
-.cta a{
-  color: var(--secondary-color);
-  text-decoration: none;
-}
-
-.cta a:hover{
-  font-weight: bolder;
-  text-decoration: underline;
-}
-
 
 body {
   color: var(--dark-color);
@@ -41,15 +18,44 @@ footer {
   background-color: var(--dark-color);
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--primary-color);
 }
 
-.even{
+
+.accordion-button {
+  background-color: var(--white-color);
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: var(--dark-color);
+  
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+}
+
+.accordion-button:hover{
+  background-color: rgb(224, 241, 255);
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--secondary-color-alpha);
+}
+
+.even {
   font-weight: bolder;
 }
 
-.odd{
+.odd {
   font-weight: 100;
 }
 
@@ -98,8 +104,32 @@ footer .social>a:hover {
 }
 
 code[class*="language-"],
-        pre[class*="language-"] {            
-            white-space: pre-wrap;            
-            word-break: break-all;
-            word-wrap: break-word;                            
-        }
+pre[class*="language-"] {
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+/* -- Style the CTA on the app page ---*/
+.cta {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
+
+.cta h4 {
+  color: var(--white-color);
+}
+
+.cta h6 {
+  color: var(--white-color);
+}
+
+.cta a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.cta a:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
