@@ -1,4 +1,4 @@
-![Image description](https://github.com/CoderFoundry/SuperDogEvents/blob/master/images/SuperDogEventsWebLogosmall.png)
+![Image description](https://github.com/CoderFoundry/JS-SuperDogEvents/blob/main/img/SuperDogEventsWebLogosmall.png)
 
 Super Dog Events A Coding Challenge
 
